@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles/styles.css">
+		<script src="scripts/jquery.min.js"></script>
+	</head>
+	<div class="border title SM">
+  _____ _   _ _____   _______  _____  ____  _        _    _   _ _____ _____ 
+ |_   _| | | | ____| | ____\ \/ / _ \|  _ \| |      / \  | \ | | ____|_   _|
+   | | | |_| |  _|   |  _|  \  / | | | |_) | |     / _ \ |  \| |  _|   | |  
+   | | |  _  | |___  | |___ /  \ |_| |  __/| |___ / ___ \| |\  | |___  | |  
+   |_| |_| |_|_____| |_____/_/\_\___/|_|   |_____/_/   \_\_| \_|_____| |_|        
+	</div>
+	<div class="SM buttonArr">
+		<div class="SM button" onclick="window.location.href='gallery.html'">Gallery</div>
+	</div>
+
+</html>
+<script>
+$.each($('.SM'), function(i, el){
+    setTimeout(function(){
+       $(el).toggleClass('Animate');
+    },200 + ( i * 200 ));
+});
+</script>
